@@ -1,0 +1,13 @@
+EVENT			| CONDITION
+----------------+---------------------------------------------
+OnFocus			| bIsFocused == false -> true
+OnUnfocus		| bIsFocused == true -> false
+OnMouseOver		| bMouseOver == false -> true
+OnMouseLeave	| bMouseOver == true -> false
+OnMouseDown		| bMouseDownOver[?] == false -> true
+OnMouseUp		| bMouseDownOver[?] == true -> false
+
+CORE WIDGET VS CHILD WIDGETS
+--------------------------------------------------------------
+- Core widget can never be focused
+	- A GameState being unfocused is the same as a core widget in-focus
